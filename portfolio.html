@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About • Gayatri Kolasani</title>
-    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="styles.css?v=21">
 </head>
 
 <body class="light">
 
+<!-- Navigation -->
 <header class="navbar">
-    <a href="index.html" class="nav-logo">GK</a>
+    <div class="nav-left">
+        <a href="index.html" class="nav-logo">GK</a>
+    </div>
 
     <nav class="nav-links">
-        <a href="portfolio.html">About</a>
+        <a href="portfolio.html" class="active">About</a>
         <a href="projects.html">Projects</a>
         <a href="#skills">Skills</a>
         <a href="contact.html">Contact</a>
+        <a href="KolasaniG.pdf" class="resume-btn" target="_blank">Resume</a>
     </nav>
 
     <button id="themeToggle" class="theme-toggle">🌙</button>
 </header>
 
+<!-- ABOUT SECTION -->
 <section class="about-section">
-    <h1 class="page-title">About Me</h1>
 
-    <div class="about-wrapper">
+    <!-- Profile Image -->
+    <img src="profile.jpg" alt="Gayatri Kolasani" class="profile-picture">
 
-        <div class="about-image-card">
-            <img src="profile.jpg" alt="Gayatri">
-        </div>
+    <!-- Card -->
+    <div class="about-card">
+        <h2>About Me</h2>
 
-        <div class="about-text">
-            <p>
-                I’m a CSE (AI) graduate with hands-on experience in machine learning, 
-                data preprocessing, analytics, and building AI-powered applications.
-            </p>
+        <p>
+            I’m a Computer Science & Engineering (AI) graduate with hands-on experience in 
+            machine learning, data preprocessing, visualization, and building end-to-end 
+            analytical solutions.
+        </p>
 
-            <p>
-                I love working where <b>data, product, and people</b> intersect — creating
-                impactful, user-centered solutions backed by analytics and AI.
-            </p>
-        </div>
+        <p>
+            I enjoy working at the intersection of <strong>data, product, and people</strong> — 
+            understanding real problems and designing practical, data-driven tools that solve them.
+        </p>
+
+        <p>
+            Recently, I engineered an <strong>AI-powered career guidance system</strong> that delivers  
+            personalized career paths, skill-gap insights, and measurable improvements 
+            in recommendation quality.
+        </p>
+
+        <h3>Core Skills</h3>
+        <ul class="skills-list">
+            <li>Python & SQL</li>
+            <li>Data Preprocessing & Cleaning</li>
+            <li>Machine Learning</li>
+            <li>EDA & Visualization</li>
+            <li>Communication & Team Worl</li>
+        </ul>
 
     </div>
 </section>
 
-<script src="script.js"></script>
+<script src="script.js?v=21"></script>
 </body>
 </html>
