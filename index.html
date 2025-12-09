@@ -1,111 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome | Gayatri Kolasani</title>
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(135deg, #0b3954, #142d4c, #103d60, #0f4c75);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Poppins, Arial, sans-serif;
-        color: white;
-    }
-
-    /* Preloader */
-    #preloader {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #0b3954;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2000;
-    }
-    .loader {
-        border: 5px solid #ffffff40;
-        border-top: 5px solid white;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-
-    .container {
-        text-align: center;
-        animation: fadeIn 1.5s ease-in-out;
-        z-index: 5;
-    }
-
-    .logo {
-        font-size: 3rem;
-        font-weight: bold;
-        letter-spacing: 3px;
-    }
-
-    .profile-pic {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        border: 3px solid white;
-        object-fit: cover;
-        margin-bottom: 15px;
-    }
-
-    h1 { font-size: 2.4rem; }
-    p { font-size: 1.1rem; color: #dceeff; }
-
-    a {
-        padding: 14px 32px;
-        background: white;
-        color: #0b3954;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    a:hover { background: #dceeff; transform: scale(1.08); }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayatri Kolasani | Welcome</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-
-<body>
-
-<!-- Loading Screen -->
-<div id="preloader"><div class="loader"></div></div>
-
-<div class="container">
-    <div class="logo">GK</div>
-
-    <img src="yourphoto.jpg" class="profile-pic">
-
-    <h1>Welcome to My Portfolio</h1>
-    <p>Data Analytics & AI Enthusiast</p>
-
-    <a href="portfolio.html">Enter Portfolio</a>
-</div>
-
-<script>
-    window.addEventListener("load", function(){
-        document.getElementById("preloader").style.display = "none";
-    });
-</script>
-
+<body class="landing">
+  <main class="landing-wrapper">
+    <div class="landing-card fade-in-up">
+      <div class="landing-badge">Portfolio</div>
+      <h1>Hi, I’m <span>Gayatri Kolasani</span></h1>
+      <p>
+        Data & AI enthusiast specializing in building smart, practical solutions –
+        from AI-powered career guidance to autonomous robotics.
+      </p>
+      <button class="primary-btn" onclick="window.location.href='portfolio.html'">
+        View my portfolio
+      </button>
+    </div>
+  </main>
 </body>
 </html>
