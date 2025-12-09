@@ -1,141 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects • Gayatri</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-bar">
-      <a href="portfolio.html" class="brand">
-        <span class="brand-mark">GK</span>
-        <span class="brand-text">Projects</span>
-      </a>
-      <nav class="nav-links">
-        <a href="portfolio.html#about">About</a>
-        <a href="portfolio.html#projects">Back to featured</a>
+
+<header class="navbar">
+    <a href="index.html" class="nav-logo">GK</a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">About</a>
         <a href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
-        <span class="theme-icon">🌙</span>
-      </button>
-    </div>
-  </header>
+    </nav>
 
-  <main class="section">
-    <div class="container project-detail-wrapper">
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+</header>
 
-      <!-- Project 1: Career Guidance -->
-      <article id="career-guidance" class="project-detail fade-in-up">
-        <h1>AI-Powered Career Pathway Guidance</h1>
-        <p class="project-detail-subtitle">
-          Intelligent recommendation system for personalized career paths and skill-gap insights.
-        </p>
-        <div class="project-detail-layout">
-          <img
-            src="project-career-ai.jpg"
-            alt="Interface concept for AI-powered career guidance"
-            class="project-detail-image"
-          />
-          <div>
-            <h2>Overview</h2>
-            <p>
-              This project focuses on helping students and graduates discover
-              suitable career paths by combining their profile data with real-time
-              job market trends. The system recommends roles, highlights skill
-              gaps, and suggests relevant learning resources.
-            </p>
+<section class="projects-page reveal">
+    <h1 class="page-title">My Projects</h1>
 
-            <h2>What I did</h2>
-            <ul>
-              <li>
-                Built a full end-to-end ML pipeline using
-                <strong>Python</strong> and <strong>Scikit-learn</strong>.
-              </li>
-              <li>
-                Applied <strong>TF-IDF</strong> (and experimented with Word2Vec)
-                to convert text inputs into numerical vectors and reduce noise.
-              </li>
-              <li>
-                Used <strong>K-Nearest Neighbors</strong> and
-                <strong>XGBoost</strong> to rank and recommend career pathways.
-              </li>
-              <li>
-                Performed <strong>skill-gap analysis</strong> and mapped users to
-                courses, tools, and certifications to improve employability.
-              </li>
-              <li>
-                Integrated a feedback loop so user responses are used to refine
-                future recommendations.
-              </li>
-              <li>
-                Evaluated alignment between user expectations and predictions
-                using <strong>Cohen’s Kappa</strong>.
-              </li>
-            </ul>
+    <div class="projects-container">
 
-            <h2>Impact</h2>
-            <ul>
-              <li>Generated 500+ personalized career recommendations.</li>
-              <li>Improved feature extraction speed and model performance.</li>
-              <li>Delivered high user satisfaction and more relevant results.</li>
-            </ul>
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="career-guidance.jpg" alt="Career Guidance Project">
 
-            <h2>Tech stack</h2>
-            <p>Python · Scikit-learn · TF-IDF · KNN · XGBoost · Data Preprocessing</p>
-          </div>
+            <div class="project-info">
+                <h2>AI-Powered Career Pathway Guidance System</h2>
+
+                <p>
+                    A machine learning–driven recommendation engine that analyzes user profiles,
+                    skills, and preferences to suggest ideal career paths with improved accuracy.
+                </p>
+
+                <ul>
+                    <li>Used TF-IDF, KNN, and XGBoost for ranking and recommendation.</li>
+                    <li>Achieved ~80% user satisfaction based on feedback study.</li>
+                    <li>Added interpretability features like skill-gap mapping.</li>
+                </ul>
+
+                <span class="tag">Python</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">ML</span>
+
+            </div>
         </div>
-      </article>
 
-      <!-- Project 2: Autonomous Trolley -->
-      <article id="autonomous-trolley" class="project-detail fade-in-up delay-1">
-        <h1>Autonomous Shopping Trolley</h1>
-        <p class="project-detail-subtitle">
-          Robotics prototype for smart transport in retail and industrial spaces.
-        </p>
-        <div class="project-detail-layout">
-          <img
-            src="project-trolley.jpg"
-            alt="Prototype of the autonomous shopping trolley"
-            class="project-detail-image"
-          />
-          <div>
-            <h2>Overview</h2>
-            <p>
-              Built during a 36-hour national-level hackathon, this autonomous
-              trolley is designed to follow or navigate defined paths to carry
-              goods across retail stores, warehouses, or healthcare facilities.
-            </p>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="robot-trolley.jpg" alt="Autonomous Trolley">
 
-            <h2>What I did</h2>
-            <ul>
-              <li>
-                Used <strong>ROS</strong> and <strong>Python</strong> to control
-                movement, sensing, and navigation.
-              </li>
-              <li>
-                Designed the overall system behaviour and tuned parameters to
-                reduce execution errors by around <strong>60%</strong>.
-              </li>
-              <li>
-                Led a team of six, coordinating roles, debugging, and testing in
-                a tight 36-hour timeframe.
-              </li>
-              <li>
-                Created 3D visualization & simulation to improve situational
-                awareness and path validation.
-              </li>
-            </ul>
+            <div class="project-info">
+                <h2>Autonomous Shopping Trolley</h2>
 
-            <h2>Tech stack</h2>
-            <p>ROS · Python · Robotics · Embedded Systems</p>
-          </div>
+                <p>
+                    Developed during a national hackathon — a robotic trolley that autonomously
+                    navigates using ROS and Python, designed for warehouse and retail assistance.
+                </p>
+
+                <ul>
+                    <li>Improved error rate by ~60% using optimized ROS pipelines.</li>
+                    <li>Performed 3D simulation & path-planning validation.</li>
+                    <li>Collaborated with a 6-member technical team.</li>
+                </ul>
+
+                <span class="tag">ROS</span>
+                <span class="tag">Python</span>
+                <span class="tag">Robotics</span>
+
+            </div>
         </div>
-      </article>
+
     </div>
-  </main>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Gayatri Kolasani</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
