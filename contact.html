@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact • Gayatri</title>
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-bar">
-      <a href="portfolio.html" class="brand">
-        <span class="brand-mark">GK</span>
-        <span class="brand-text">Contact</span>
-      </a>
-      <nav class="nav-links">
-        <a href="portfolio.html#about">About</a>
-        <a href="portfolio.html#projects">Projects</a>
-        <a href="portfolio.html#skills">Skills</a>
-      </nav>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
-        <span class="theme-icon">🌙</span>
-      </button>
-    </div>
-  </header>
 
-  <main class="section">
-    <div class="container contact-layout fade-in-up">
-      <div>
-        <h1>Let’s connect</h1>
-        <p>
-          I’m open to opportunities in data analytics, AI, and technology-driven
-          roles. Feel free to reach out if you’d like to collaborate or just say hi.
+<header class="navbar">
+    <a href="index.html" class="nav-logo">GK</a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+</header>
+
+<section class="contact-section reveal">
+    <h1 class="page-title">Let's Connect</h1>
+
+    <div class="contact-card-full">
+
+        <p class="contact-text">
+            I’m actively seeking roles in Data Analytics, Machine Learning,  
+            Business Analysis, and AI-related domains.  
+            Feel free to reach out — I'm always open to opportunities,  
+            collaborations, and meaningful conversations.
         </p>
 
-        <div class="contact-info">
-          <p>📧 <a href="mailto:gayatrikolasani@gmail.com">gayatrikolasani@gmail.com</a></p>
-          <p>🔗 <a href="https://www.linkedin.com/in/gayatri-kolasani-gk25" target="_blank">LinkedIn Profile</a></p>
-          <p>💻 <a href="https://github.com/Gayatrikolasani" target="_blank">GitHub: Gayatrikolasani</a></p>
+        <div class="contact-buttons">
+
+            <a href="mailto:gayatrikolasani@gmail.com" class="btn primary-btn">
+                Email Me
+            </a>
+
+            <a href="https://www.linkedin.com/in/gayatri-kolasani-gk25" 
+               target="_blank" 
+               class="btn primary-btn">
+                LinkedIn
+            </a>
+
+            <a href="KolasaniG.pdf" 
+               target="_blank"
+               class="btn secondary-btn">
+                Download Resume
+            </a>
+
         </div>
-      </div>
 
-      <form class="contact-form" action="mailto:gayatrikolasani@gmail.com" method="post" enctype="text/plain">
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="primary-btn">Send message</button>
-        <p class="form-note">
-          This uses your email app to send the message directly to me.
+        <p class="contact-note">
+            Location: Guntur, Andhra Pradesh, India  
         </p>
-      </form>
+
     </div>
-  </main>
+</section>
+
+
+<footer class="footer">
+    <p>© 2025 Gayatri Kolasani</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
-
