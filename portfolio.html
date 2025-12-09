@@ -1,157 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio | Gayatri Kolasani</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-    body { margin: 0; font-family: Poppins, sans-serif; background: #f4f4f4; }
-
-    /* Preloader */
-    #preloader {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #0b3954;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2000;
-    }
-    .loader {
-        border: 5px solid #ffffff40;
-        border-top: 5px solid white;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-    }
-
-    nav {
-        background: #0b3954;
-        padding: 12px 25px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-    }
-    nav a {
-        color: white;
-        margin-left: 20px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    header {
-        background: linear-gradient(135deg, #0b3954, #0f4c75);
-        padding: 40px;
-        text-align: center;
-        color: white;
-    }
-
-    main { max-width: 950px; margin: auto; padding: 20px; }
-
-    h2 { color: #0b3954; border-bottom: 2px solid #ddd; }
-
-    .tag {
-        display: inline-block;
-        background: #dceeff;
-        padding: 6px 10px;
-        margin: 3px;
-        border-radius: 5px;
-    }
-
-    .card {
-        background: white;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 12px;
-        box-shadow: 0px 3px 10px rgba(0,0,0,0.12);
-    }
-
-    footer {
-        background: #0b3954;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        margin-top: 30px;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayatri Kolasani | Data & AI Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-<div id="preloader"><div class="loader"></div></div>
-
-<nav>
-    <div class="logo">GK</div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="projects.html">Projects</a>
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="portfolio.html" class="brand">
+        <span class="brand-mark">GK</span>
+        <span class="brand-text">Gayatri Kolasani</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
     </div>
-</nav>
+  </header>
 
-<header>
-    <h1>Gayatri Kolasani</h1>
-    <p>Data Analytics • Machine Learning • AI</p>
-    <a href="Gayatri_Resume.pdf" style="background:white;color:#0b3954;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Download Resume</a>
-</header>
+  <!-- Hero section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text fade-in-up">
+          <p class="eyebrow">Data & AI Enthusiast · Graduate 2025</p>
+          <h1>
+            Turning <span>data</span> into clear,
+            <span>actionable insights</span>.
+          </h1>
+          <p class="hero-subtitle">
+            I build intelligent systems that make decisions easier – from
+            AI-powered career recommendations to real-world robotics solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="primary-btn">View featured projects</a>
+            <a href="contact.html" class="ghost-btn">Let’s connect</a>
+          </div>
+        </div>
 
-<main>
+        <div class="hero-image-wrapper fade-in-up delay-1">
+          <div class="hero-image-ring"></div>
+          <img
+            src="gayatri-profile.jpg"
+            alt="Portrait of Gayatri Kolasani"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
 
-<h2>About Me</h2>
-<p>
-I am a Computer Science (AI) graduate passionate about data analytics, ML, and transforming data into insights.
-</p>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid-two">
+        <div class="fade-in-up">
+          <h2>About me</h2>
+          <p>
+            I’m a Computer Science & Engineering (AI) graduate with hands-on
+            experience in machine learning, data preprocessing, and building
+            end-to-end analytical solutions. I enjoy working at the intersection
+            of <strong>data, product, and people</strong> – understanding real
+            problems and designing practical, data-driven tools to solve them.
+          </p>
+          <p>
+            Recently, I engineered an AI-powered career guidance system that
+            delivers personalized career paths and skill-gap insights, achieving
+            strong user satisfaction and measurable improvements in
+            recommendation quality.
+          </p>
+        </div>
+        <div class="about-highlights fade-in-up delay-1">
+          <div class="pill">Python & SQL</div>
+          <div class="pill">Machine Learning</div>
+          <div class="pill">Data Preprocessing</div>
+          <div class="pill">Model Evaluation</div>
+          <div class="pill">Problem Solving</div>
+          <div class="pill">Team Collaboration</div>
+        </div>
+      </div>
+    </section>
 
-<h2>Skills</h2>
-<p>
-    <span class="tag">Python</span>
-    <span class="tag">SQL</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">XGBoost</span>
-    <span class="tag">TF-IDF</span>
-    <span class="tag">KNN</span>
-    <span class="tag">scikit-learn</span>
-    <span class="tag">Data Cleaning</span>
-</p>
+    <!-- Featured Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured projects</h2>
+          <p>Real, end-to-end work in AI, data, and robotics.</p>
+        </div>
 
-<h2>Highlighted Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card fade-in-up">
+            <img
+              src="project-career-ai.jpg"
+              alt="AI-powered career analytics dashboard"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>AI-Powered Career Pathway Guidance</h3>
+              <p class="project-tagline">
+                Personalized career recommendations using ML & real-world data.
+              </p>
+              <p class="project-body">
+                Built an AI-driven system that analyzes user profiles and job
+                market trends to recommend suitable career paths. Implemented
+                TF-IDF vectorization, K-Nearest Neighbors and XGBoost to rank
+                pathways, achieving higher prediction accuracy and strong user
+                satisfaction.
+              </p>
+              <ul class="project-meta">
+                <li>500+ personalized recommendations delivered</li>
+                <li>Improved recommendation relevance and accuracy</li>
+                <li>Continuous refinement using feedback loops</li>
+              </ul>
+              <div class="project-footer">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">TF-IDF</span>
+                <span class="tech-pill">XGBoost</span>
+                <a href="projects.html#career-guidance" class="text-link">
+                  View details →
+                </a>
+              </div>
+            </div>
+          </article>
 
-<div class="card">
-    <h3>AI Career Guidance System</h3>
-    <ul>
-        <li>Generated 500+ career recommendations.</li>
-        <li>Improved model accuracy by 20%.</li>
-        <li>Developed feature engineering & feedback loop.</li>
-    </ul>
-</div>
+          <!-- Project 2 -->
+          <article class="project-card fade-in-up delay-1">
+            <img
+              src="project-trolley.jpg"
+              alt="Autonomous shopping trolley robot"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Autonomous Shopping Trolley</h3>
+              <p class="project-tagline">
+                Robotics prototype for smart, hands-free item transport.
+              </p>
+              <p class="project-body">
+                Designed and developed an autonomous trolley using ROS and
+                Python during a 36-hour national hackathon. The robot supports
+                movement of goods in settings like retail, warehousing, and
+                healthcare, with improved navigation stability and reduced
+                execution errors.
+              </p>
+              <ul class="project-meta">
+                <li>Built with ROS and Python</li>
+                <li>60% reduction in execution errors through optimization</li>
+                <li>Led a team of six to deliver a working prototype</li>
+              </ul>
+              <div class="project-footer">
+                <span class="tech-pill">ROS</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Robotics</span>
+                <a href="projects.html#autonomous-trolley" class="text-link">
+                  View details →
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-    <h3>Autonomous Shopping Trolley</h3>
-    <ul>
-        <li>Built in a 36-hour hackathon.</li>
-        <li>Reduced execution errors by 60%.</li>
-        <li>Used ROS and Python for automation.</li>
-    </ul>
-</div>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Skills & tools</h2>
+          <p>What I use to turn raw data into decisions.</p>
+        </div>
+        <div class="skills-grid fade-in-up">
+          <div class="skill-group">
+            <h3>Data & ML</h3>
+            <p>Python · Scikit-learn · XGBoost · KNN · TF-IDF · Word2Vec</p>
+          </div>
+          <div class="skill-group">
+            <h3>Data workflows</h3>
+            <p>Data preprocessing · Feature engineering · Model evaluation</p>
+          </div>
+          <div class="skill-group">
+            <h3>Core tools</h3>
+            <p>SQL · Jupyter Notebook · VS Code</p>
+          </div>
+          <div class="skill-group">
+            <h3>Professional</h3>
+            <p>Problem solving · Communication · Team leadership</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</main>
-
-<footer>
-    © 2025 Gayatri Kolasani
-</footer>
-
-<script>
-    window.addEventListener("load", function(){
-        document.getElementById("preloader").style.display = "none";
-    });
-</script>
-
+    <!-- Call to action -->
+    <section class="section section-cta">
+      <div class="container cta-card fade-in-up">
+        <div>
+          <h2>Let’s build something data-driven.</h2>
+          <p>
+            I’m open to roles and projects in data analytics, AI, and
+            technology-driven problem solving.
+          </p>
+        </div>
+        <a href="contact.html" class="primary-btn">Get in touch</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
