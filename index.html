@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gayatri Kolasani • Portfolio</title>
-
-    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
 <body class="light">
 
-    <!-- Navigation -->
-    <header class="navbar">
+<header class="navbar">
+    <div class="nav-left">
         <a href="index.html" class="nav-logo">GK</a>
+    </div>
 
-        <nav class="nav-links">
-            <a href="portfolio.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <nav class="nav-links">
+        <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="KolasaniG.pdf" class="resume-btn" target="_blank">Resume</a>
+    </nav>
 
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-    </header>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-card">
+<!-- HERO SECTION -->
+<section class="hero">
+    
+    <!-- Circle Profile Image -->
+    <img src="profile.jpg" alt="Gayatri Kolasani" class="profile-picture">
 
-            <img src="profile.jpg" alt="Gayatri Kolasani" class="hero-image-circle">
+    <!-- Content Card -->
+    <div class="hero-card">
+        <span class="tag">Portfolio</span>
 
-            <span class="tag">Portfolio</span>
+        <h1>Hi, I’m <span>Gayatri Kolasani</span></h1>
 
-            <h1 class="hero-title">
-                Hi, I’m <span class="highlight">Gayatri Kolasani</span>
-            </h1>
+        <p class="tagline">
+            Transforming data into decisions — where analytical insight meets AI intelligence.
+        </p>
 
-            <p class="hero-description">
-                “Transforming data into decisions — where analytical insight meets AI intelligence.”
-            </p>
+        <a href="portfolio.html" class="cta-btn">View my portfolio</a>
+    </div>
+</section>
 
-            <div class="hero-btn-wrapper">
-                <a href="portfolio.html" class="primary-btn">View my portfolio</a>
-            </div>
-
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+<script src="script.js?v=20"></script>
 </body>
 </html>
