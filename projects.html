@@ -3,87 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects • Gayatri</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Projects • Gayatri Kolasani</title>
+    <link rel="stylesheet" href="styles.css?v=15" />
 </head>
 
-<body>
+<body class="light">
 
 <header class="navbar">
     <a href="index.html" class="nav-logo">GK</a>
 
     <nav class="nav-links">
-        <a href="index.html">Home</a>
         <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <button id="themeToggle" class="theme-toggle">🌙</button>
 </header>
 
-<section class="projects-page reveal">
-    <h1 class="page-title">My Projects</h1>
+<section class="projects-section">
+    <h1 class="page-title">Projects</h1>
 
     <div class="projects-container">
 
         <!-- Project 1 -->
         <div class="project-card">
-            <img src="career-guidance.jpg" alt="Career Guidance Project">
-
-            <div class="project-info">
-                <h2>AI-Powered Career Pathway Guidance System</h2>
-
+            <img src="career-guidance.jpg" alt="AI Career Guidance System">
+            <div class="project-content">
+                <h2>AI-Powered Career Guidance System</h2>
                 <p>
-                    A machine learning–driven recommendation engine that analyzes user profiles,
-                    skills, and preferences to suggest ideal career paths with improved accuracy.
+                    A personalized career recommendation engine built using ML models and
+                    natural language processing. It analyzes user skills, interests, and 
+                    industry trends to suggest accurate career pathways.
                 </p>
-
-                <ul>
-                    <li>Used TF-IDF, KNN, and XGBoost for ranking and recommendation.</li>
-                    <li>Achieved ~80% user satisfaction based on feedback study.</li>
-                    <li>Added interpretability features like skill-gap mapping.</li>
-                </ul>
-
-                <span class="tag">Python</span>
-                <span class="tag">XGBoost</span>
-                <span class="tag">ML</span>
-
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
-            <img src="robot-trolley.jpg" alt="Autonomous Trolley">
-
-            <div class="project-info">
-                <h2>Autonomous Shopping Trolley</h2>
-
+            <img src="robot-trolley.jpg" alt="Robot Trolley">
+            <div class="project-content">
+                <h2>Autonomous Smart Trolley</h2>
                 <p>
-                    Developed during a national hackathon — a robotic trolley that autonomously
-                    navigates using ROS and Python, designed for warehouse and retail assistance.
+                    A robotics-based automation system designed for object transport using 
+                    ultrasonic sensors and microcontroller logic. Built for efficient 
+                    navigation and hands-free movement.
                 </p>
-
-                <ul>
-                    <li>Improved error rate by ~60% using optimized ROS pipelines.</li>
-                    <li>Performed 3D simulation & path-planning validation.</li>
-                    <li>Collaborated with a 6-member technical team.</li>
-                </ul>
-
-                <span class="tag">ROS</span>
-                <span class="tag">Python</span>
-                <span class="tag">Robotics</span>
-
             </div>
         </div>
 
     </div>
 </section>
 
-<footer class="footer">
-    <p>© 2025 Gayatri Kolasani</p>
-</footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
