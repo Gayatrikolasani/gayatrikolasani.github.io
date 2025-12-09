@@ -1,111 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Projects | Gayatri</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-    body { margin: 0; font-family: Poppins, sans-serif; background: #f4f4f4; }
-
-    nav {
-        background: #0b3954;
-        padding: 12px 25px;
-        display: flex;
-        justify-content: space-between;
-        color: white;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-weight: bold;
-    }
-
-    header {
-        background: linear-gradient(135deg, #0b3954, #0f4c75);
-        padding: 30px;
-        color: white;
-        text-align: center;
-    }
-
-    .container { max-width: 950px; margin: auto; padding: 20px; }
-
-    .card {
-        background: white;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 12px;
-        box-shadow: 0px 3px 12px rgba(0,0,0,0.12);
-    }
-
-    .tag {
-        background: #dceeff;
-        padding: 6px 10px;
-        border-radius: 5px;
-        margin: 3px;
-        display: inline-block;
-    }
-
-    footer {
-        background: #0b3954;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Gayatri Kolasani</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-<nav>
-    <div class="logo">GK</div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="projects.html">Projects</a>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="portfolio.html" class="brand">
+        <span class="brand-mark">GK</span>
+        <span class="brand-text">Projects</span>
+      </a>
+      <nav class="nav-links">
+        <a href="portfolio.html#about">About</a>
+        <a href="portfolio.html#projects">Back to featured</a>
         <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
     </div>
-</nav>
+  </header>
 
-<header>
-    <h1>My Projects</h1>
-</header>
+  <main class="section">
+    <div class="container project-detail-wrapper">
 
-<div class="container">
+      <!-- Project 1: AI Powered Career Guidance System For Personalization -->
+      <article id="career-guidance" class="project-detail fade-in-up">
+        <h1>AI-Powered Career Pathway Guidance</h1>
+        <p class="project-detail-subtitle">
+          Intelligent recommendation system for personalized career paths and skill-gap insights.
+        </p>
+        <div class="project-detail-layout">
+          <img
+            src=""C:\Users\Gayat\Downloads\project1.jpg.jpeg""
+            alt="Interface concept for AI-powered career guidance"
+            class="project-detail-image"
+          />
+          <div>
+            <h2>Overview</h2>
+            <p>
+              This project focuses on helping students and graduates discover
+              suitable career paths by combining their profile data with real-time
+              job market trends. The system recommends roles, highlights skill
+              gaps, and suggests relevant learning resources.
+            </p>
 
-<div class="card">
-    <h2>AI Career Guidance System</h2>
-    <p>
-        <span class="tag">Python</span>
-        <span class="tag">XGBoost</span>
-        <span class="tag">TF-IDF</span>
-    </p>
-    <ul>
-        <li>Generated 500+ personalized recommendations.</li>
-        <li>Improved accuracy by 20%.</li>
-        <li>Added feedback-based learning.</li>
-    </ul>
-</div>
+            <h2>What I did</h2>
+            <ul>
+              <li>
+                Built a full end-to-end ML pipeline using
+                <strong>Python</strong> and <strong>Scikit-learn</strong>.
+              </li>
+              <li>
+                Applied <strong>TF-IDF</strong> (and experimented with Word2Vec)
+                to convert text inputs into numerical vectors and reduce noise.
+              </li>
+              <li>
+                Used <strong>K-Nearest Neighbors</strong> and
+                <strong>XGBoost</strong> to rank and recommend career pathways.
+              </li>
+              <li>
+                Performed <strong>skill-gap analysis</strong> and mapped users to
+                courses, tools, and certifications to improve employability.
+              </li>
+              <li>
+                Integrated a feedback loop so user responses are used to refine
+                future recommendations.
+              </li>
+              <li>
+                Evaluated alignment between user expectations and predictions
+                using <strong>Cohen’s Kappa</strong>.
+              </li>
+            </ul>
 
-<div class="card">
-    <h2>Autonomous Shopping Trolley</h2>
-    <p>
-        <span class="tag">ROS</span>
-        <span class="tag">Python</span>
-    </p>
-    <ul>
-        <li>Built autonomous robot in 36 hours.</li>
-        <li>Reduced errors by 60%.</li>
-        <li>Integrated 3D simulation.</li>
-    </ul>
-</div>
+            <h2>Impact</h2>
+            <ul>
+              <li>Generated 500+ personalized career recommendations.</li>
+              <li>Improved feature extraction speed and model performance.</li>
+              <li>Delivered high user satisfaction and more relevant results.</li>
+            </ul>
 
-</div>
+            <h2>Tech stack</h2>
+            <p>Python · Scikit-learn · TF-IDF · KNN · XGBoost · Data Preprocessing</p>
+          </div>
+        </div>
+      </article>
 
-<footer>
-    © 2025 Gayatri Kolasani
-</footer>
+      <!-- Project 2: Autonomous Trolley -->
+      <article id="autonomous-trolley" class="project-detail fade-in-up delay-1">
+        <h1>Autonomous Shopping Trolley</h1>
+        <p class="project-detail-subtitle">
+          Robotics prototype for smart transport in retail and industrial spaces.
+        </p>
+        <div class="project-detail-layout">
+          <img
+            src=""C:\Users\Gayat\Downloads\project2.jpg.jpeg""
+            alt="Prototype of the autonomous shopping trolley"
+            class="project-detail-image"
+          />
+          <div>
+            <h2>Overview</h2>
+            <p>
+              Built during a 36-hour national-level hackathon, this autonomous
+              trolley is designed to follow or navigate defined paths to carry
+              goods across retail stores, warehouses, or healthcare facilities.
+            </p>
 
+            <h2>What I did</h2>
+            <ul>
+              <li>
+                Used <strong>ROS</strong> and <strong>Python</strong> to control
+                movement, sensing, and navigation.
+              </li>
+              <li>
+                Designed the overall system behaviour and tuned parameters to
+                reduce execution errors by around <strong>60%</strong>.
+              </li>
+              <li>
+                Led a team of six, coordinating roles, debugging, and testing in
+                a tight 36-hour timeframe.
+              </li>
+              <li>
+                Created 3D visualization & simulation to improve situational
+                awareness and path validation.
+              </li>
+            </ul>
+
+            <h2>Tech stack</h2>
+            <p>ROS · Python · Robotics · Embedded Systems</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
 </body>
 </html>
