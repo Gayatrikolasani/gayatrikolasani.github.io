@@ -1,50 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayatri Kolasani • Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=20">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayatri Kolasani | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="light">
-
-<header class="navbar">
-    <div class="nav-left">
-        <a href="index.html" class="nav-logo">GK</a>
+<body data-theme="light">
+  <!-- Welcome Overlay -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-card">
+      <h1 class="welcome-title">Welcome to my Portfolio</h1>
+      <p class="welcome-subtitle">
+        I’m <span class="highlight">Gayatri Kolasani</span> – Data & AI enthusiast, aspiring Data Analyst.
+      </p>
+      <button id="enterBtn" class="primary-btn">
+        View my work
+      </button>
     </div>
+  </div>
 
-    <nav class="nav-links">
-        <a href="portfolio.html">About</a>
-        <a href="projects.html">Projects</a>
+  <!-- Main Page Wrapper -->
+  <div class="page-wrapper">
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-mark">GK</span>
+        <span class="logo-text">Gayatri Kolasani</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="contact.html">Contact</a>
-        <a href="KolasaniG.pdf" class="resume-btn" target="_blank">Resume</a>
-    </nav>
+        <a href="#projects">Projects</a>
+        <a href="#publication">Publication</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-</header>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    
-    <!-- Circle Profile Image -->
-    <img src="profile.jpg" alt="Gayatri Kolasani" class="profile-picture">
-
-    <!-- Content Card -->
-    <div class="hero-card">
-        <span class="tag">Portfolio</span>
-
-        <h1>Hi, I’m <span>Gayatri Kolasani</span></h1>
-
-        <p class="tagline">
-            Transforming data into decisions — where analytical insight meets AI intelligence.
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="hero-content fade-in">
+        <p class="hero-tag">Data & AI Enthusiast · Aspiring Data Analyst</p>
+        <h1>Hi, I’m <span class="accent">Gayatri</span>.</h1>
+        <p class="hero-text">
+          I build data-driven solutions using machine learning and analytics to
+          turn raw data into clear, actionable insights. I enjoy working on
+          real-world problems in career guidance, automation, and intelligent systems.
         </p>
+        <div class="hero-actions">
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="#contact" class="secondary-btn">Get in touch</a>
+        </div>
+      </div>
 
-        <a href="portfolio.html" class="cta-btn">View my portfolio</a>
-    </div>
-</section>
+      <div class="hero-image fade-in-delayed">
+        <!-- Replace this src with your own picture file path -->
+        <div class="profile-wrapper">
+          <img src="assets/profile.jpeg" alt="Gayatri Kolasani" class="profile-img" />
+          <div class="profile-badge">
+            <span>Fresher · CSE (AI)</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js?v=20"></script>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Brief overview of who I am and how I work.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card soft-card slide-up">
+          <h3>Profile</h3>
+          <p>
+            I am a 2025 graduate in <strong>Computer Science & Engineering (AI)</strong>
+            from KKR &amp; KSR Institute of Technology and Sciences, Guntur.
+            I enjoy exploring how data, machine learning, and business intersect.
+          </p>
+          <p>
+            My recent work includes building an
+            <strong>AI-powered career guidance system</strong> and
+            contributing to an <strong>autonomous shopping trolley</strong> in a robotics hackathon.
+          </p>
+        </div>
+        <div class="card soft-card slide-up">
+          <h3>What I’m looking for</h3>
+          <p>
+            I’m seeking opportunities in <strong>Data Analytics</strong>,
+            <strong>Business Intelligence</strong>, or <strong>Data Science</strong> roles where
+            I can:
+          </p>
+          <ul class="styled-list">
+            <li>Work with real-world datasets and analytical dashboards.</li>
+            <li>Support decision-making using insights and ML models.</li>
+            <li>Collaborate with cross-functional teams in a structured, consulting-like environment.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Technical and professional skills I bring to a team.</p>
+      </div>
+
+      <div class="grid three-column">
+        <div class="card soft-card slide-up">
+          <h3>Technical</h3>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Machine Learning (Scikit-learn)</li>
+            <li>TF-IDF, KNN, XGBoost</li>
+            <li>Data Preprocessing & Cleaning</li>
+            <li>Jupyter Notebook</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+
+        <div class="card soft-card slide-up">
+          <h3>Analytics & ML</h3>
+          <ul class="tag-list">
+            <li>Feature Engineering</li>
+            <li>Recommendation Systems</li>
+            <li>Model Evaluation (Cohen’s Kappa)</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+
+        <div class="card soft-card slide-up">
+          <h3>Professional</h3>
+          <ul class="tag-list">
+            <li>Problem-Solving</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Leadership (Hackathon Team Lead)</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Selected work showcasing my experience in data, AI, and automation.</p>
+      </div>
+
+      <div class="grid two-column">
+        <!-- Project 1 -->
+        <article class="card project-card slide-up">
+          <div class="project-image-wrapper">
+            <!-- Replace with your real project image -->
+            <img src="assets/ai-career-guidance.jpeg" alt="AI Career Guidance System" class="project-image" />
+          </div>
+          <div class="project-content">
+            <h3>AI-Powered Career Pathway Guidance System</h3>
+            <p class="project-role">Role: ML & Data Pipeline Developer</p>
+            <p class="project-description">
+              Designed and implemented an AI-driven system that generates personalized
+              career recommendations by analyzing user profiles and real-time job
+              market trends. The system helps students make informed career decisions.
+            </p>
+            <ul class="project-highlights">
+              <li>Generated <strong>500+ career recommendations</strong> with an <strong>80% user satisfaction</strong> rating based on feedback surveys.</li>
+              <li>Used <strong>TF-IDF</strong> and <strong>Word2Vec</strong> for feature extraction, improving processing speed by <strong>30%</strong> and reducing noise.</li>
+              <li>Applied <strong>KNN</strong> and <strong>XGBoost</strong> for ranking and matching profiles, improving prediction accuracy by <strong>20%</strong>.</li>
+              <li>Integrated skill-gap analysis with personalized suggestions for courses, tools, and certifications.</li>
+              <li>Added a feedback loop using supervised learning to continuously refine recommendations, improving relevance by <strong>20%</strong>.</li>
+              <li>Evaluated alignment using <strong>Cohen’s Kappa</strong> to ensure quality of recommended paths.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>TF-IDF</span>
+              <span>KNN</span><span>XGBoost</span><span>Data Preprocessing</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card slide-up">
+          <div class="project-image-wrapper">
+            <!-- Replace with your real project image -->
+            <img src="assets/autonomous-trolley.jpeg" alt="Autonomous Shopping Trolley" class="project-image" />
+          </div>
+          <div class="project-content">
+            <h3>Autonomous Shopping Trolley (Robotics Hackathon)</h3>
+            <p class="project-role">Role: Team Lead & Python Developer</p>
+            <p class="project-description">
+              Developed an autonomous robot trolley in a 36-hour national level hackathon
+              to help transport goods across industries such as warehousing, healthcare, and retail.
+            </p>
+            <ul class="project-highlights">
+              <li>Built the trolley using <strong>ROS</strong> with real-time navigation and control.</li>
+              <li>Enhanced situational awareness with <strong>3D visualization & simulation</strong>.</li>
+              <li>Integrated Python scripts that reduced execution errors by around <strong>60%</strong>, improving reliability.</li>
+              <li>Led a <strong>team of six</strong>, coordinating design, development, testing and presentation.</li>
+            </ul>
+            <div class="project-tags">
+              <span>ROS</span><span>Python</span><span>Robotics</span>
+              <span>Simulation</span><span>Team Leadership</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Publication Section -->
+    <section id="publication" class="section">
+      <div class="section-header">
+        <h2>Publication</h2>
+        <p>Academic work related to my AI project.</p>
+      </div>
+      <div class="card soft-card slide-up">
+        <h3>AI-Powered Career Pathway Guidance for Personalization</h3>
+        <p>
+          Presented at the <strong>National Conference on Innovative Challenges in Deep Learning and its Applications (NCICDLA-25)</strong>.
+        </p>
+        <p>
+          Showcased a machine learning system trained on real-world datasets to provide
+          personalized career suggestions to students, contributing to better-informed
+          career planning.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s connect for opportunities, collaborations, or just a conversation.</p>
+      </div>
+
+      <div class="grid two-column contact-grid">
+        <div class="card soft-card slide-up">
+          <h3>Reach out</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:gayatrikolasani@gmail.com">gayatrikolasani@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gayatri-kolasani-gk25" target="_blank" rel="noopener">linkedin.com/in/gayatri-kolasani-gk25</a></li>
+          </ul>
+        </div>
+
+        <div class="card soft-card slide-up">
+          <h3>Open to</h3>
+          <ul class="styled-list">
+            <li>Data Analyst / Business Analyst roles</li>
+            <li>Analytics or ML-focused projects and internships</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Gayatri Kolasani. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
