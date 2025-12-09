@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio | Gayatri Kolasani</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body { margin: 0; font-family: Poppins, sans-serif; background: #f4f4f4; }
+
+    /* Preloader */
+    #preloader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #0b3954;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+    }
+    .loader {
+        border: 5px solid #ffffff40;
+        border-top: 5px solid white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+
+    nav {
+        background: #0b3954;
+        padding: 12px 25px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header {
+        background: linear-gradient(135deg, #0b3954, #0f4c75);
+        padding: 40px;
+        text-align: center;
+        color: white;
+    }
+
+    main { max-width: 950px; margin: auto; padding: 20px; }
+
+    h2 { color: #0b3954; border-bottom: 2px solid #ddd; }
+
+    .tag {
+        display: inline-block;
+        background: #dceeff;
+        padding: 6px 10px;
+        margin: 3px;
+        border-radius: 5px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 12px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.12);
+    }
+
+    footer {
+        background: #0b3954;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="preloader"><div class="loader"></div></div>
+
+<nav>
+    <div class="logo">GK</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Gayatri Kolasani</h1>
+    <p>Data Analytics • Machine Learning • AI</p>
+    <a href="Gayatri_Resume.pdf" style="background:white;color:#0b3954;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Download Resume</a>
+</header>
+
+<main>
+
+<h2>About Me</h2>
+<p>
+I am a Computer Science (AI) graduate passionate about data analytics, ML, and transforming data into insights.
+</p>
+
+<h2>Skills</h2>
+<p>
+    <span class="tag">Python</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">XGBoost</span>
+    <span class="tag">TF-IDF</span>
+    <span class="tag">KNN</span>
+    <span class="tag">scikit-learn</span>
+    <span class="tag">Data Cleaning</span>
+</p>
+
+<h2>Highlighted Projects</h2>
+
+<div class="card">
+    <h3>AI Career Guidance System</h3>
+    <ul>
+        <li>Generated 500+ career recommendations.</li>
+        <li>Improved model accuracy by 20%.</li>
+        <li>Developed feature engineering & feedback loop.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3>Autonomous Shopping Trolley</h3>
+    <ul>
+        <li>Built in a 36-hour hackathon.</li>
+        <li>Reduced execution errors by 60%.</li>
+        <li>Used ROS and Python for automation.</li>
+    </ul>
+</div>
+
+</main>
+
+<footer>
+    © 2025 Gayatri Kolasani
+</footer>
+
+<script>
+    window.addEventListener("load", function(){
+        document.getElementById("preloader").style.display = "none";
+    });
+</script>
+
+</body>
+</html>
