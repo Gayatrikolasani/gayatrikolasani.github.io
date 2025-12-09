@@ -1,45 +1,63 @@
-// Theme toggle
+/* -----------------------------------
+   THEME TOGGLE (Light / Dark Mode)
+----------------------------------- */
+
+const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
-const themeToggleBtn = document.getElementById("theme-toggle");
-const themeIcon = document.querySelector(".theme-icon");
 
 // Load saved theme
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  body.classList.add("dark-theme");
-  body.classList.remove("light-theme");
-  themeIcon.textContent = "☀️";
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark");
+  themeToggle.textContent = "☀️";
 } else {
-  body.classList.add("light-theme");
-  themeIcon.textContent = "🌙";
+  body.classList.remove("dark");
+  themeToggle.textContent = "🌙";
 }
 
-themeToggleBtn.addEventListener("click", () => {
-  const isDark = body.classList.toggle("dark-theme");
-  body.classList.toggle("light-theme", !isDark);
-  themeIcon.textContent = isDark ? "☀️" : "🌙";
-  localStorage.setItem("theme", isDark ? "dark" : "light");
+// Toggle theme
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+
+  if (body.classList.contains("dark")) {
+    themeToggle.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeToggle.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  }
 });
 
-// Reveal on scroll
-const revealElements = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
+/* -----------------------------------
+   FLOATING ROSE-GOLD SHAPES ANIMATION
+----------------------------------- */
 
-revealElements.forEach((el) => observer.observe(el));
+function createFloatingShape() {
+  const shape = document.createElement("div");
+  shape.classList.add("floating-shape");
 
-// Footer year
-const yearSpan = document.getElementById("year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
+  // random size + position
+  const size = Math.random() * 80 + 40;
+  const left = Math.random() * 90;
+
+  shape.style.width = `${size}px`;
+  shape.style.height = `${size}px`;
+  shape.style.left = `${left}vw`;
+
+  document.body.appendChild(shape);
+
+  // Remove shape after animation ends
+  setTimeout(() => {
+    shape.remove();
+  }, 9000);
 }
+
+// Create shapes every 1.4s
+setInterval(createFloatingShape, 1400);
+
+
+/* -----------------------------------
+   SCROLL REVEAL ANIMATION
+----------------------------------- */
+
+const elements = document.queryS
