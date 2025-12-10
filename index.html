@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayatri Kolasani | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayatri Kolasani • Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=30" />
 </head>
-
-<body class="hero-body">
-
-    <!-- NAVBAR -->
-    <nav class="nav">
-        <div class="nav-logo">GK</div>
-        <div class="nav-links">
-            <a href="portfolio.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="publications.html">Publication</a>
-            <a href="contact.html">Contact</a>
-        </div>
+<body class="light">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">GK</a>
+    <nav class="nav-links">
+      <a href="portfolio.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
     </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-container">
+  <!-- MAIN CONTENT -->
+  <main class="page">
+    <section class="hero">
+      <div class="hero-left fade-in">
+        <p class="hero-tag">Data & AI Enthusiast · Graduate 2025</p>
+        <h1>Hi, I’m <span class="accent">Gayatri</span>.</h1>
+        <p class="hero-text">
+          “Transforming data into decisions — where analytical insight meets AI intelligence.”
+        </p>
 
-        <!-- LEFT -->
-        <div class="hero-left fade-in">
-            <div class="hero-tag">DATA & AI ENTHUSIAST • ASPIRING DATA ANALYST</div>
-
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Gayatri</span>.</h1>
-
-            <p class="hero-desc">
-                “Transforming data into decisions — where analytical insight meets AI intelligence.”
-            </p>
-
-            <a href="portfolio.html" class="btn-primary">View Portfolio</a>
-            <a href="portfolio.html" class="btn-secondary">More About Me</a>
+        <div class="hero-buttons">
+          <a href="portfolio.html" class="btn-primary">View my portfolio</a>
+          <a href="projects.html" class="btn-outline">See projects</a>
         </div>
+      </div>
 
-        <!-- RIGHT IMAGE -->
-        <div class="hero-right fade-in-delayed">
-            <div class="hero-image-card">
-                <img src="profile.jpg" class="hero-profile-img" alt="Gayatri Kolasani">
-            </div>
+      <div class="hero-right fade-in-delayed">
+        <div class="hero-photo-wrapper">
+          <img src="profile.jpg" alt="Gayatri Kolasani" class="hero-photo" />
         </div>
-
+      </div>
     </section>
+  </main>
 
+  <footer class="footer">
+    © 2025 Gayatri Kolasani. All rights reserved.
+  </footer>
+
+  <script src="script.js?v=30"></script>
 </body>
 </html>
