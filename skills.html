@@ -4,75 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills • Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=200" />
 </head>
 
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <a href="index.html" class="nav-logo">GK</a>
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-pill">
+        <span class="brand-avatar">GK</span>
+      </a>
 
-    <nav class="nav-links">
-      <a href="portfolio.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html" class="active">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </div>
   </header>
 
   <main class="page-wrapper fade-in">
-    <h1 class="page-title">Skills</h1>
+    <header class="page-header">
+      <h1 class="page-title">Skills</h1>
+      <p class="page-subtitle">
+        A blend of technical, analytical, and collaborative skills I bring to a team.
+      </p>
+    </header>
 
-    <section class="skills-section">
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Python</li>
+    <section class="skills-grid">
+      <article class="card skill-card">
+        <h2>Technical</h2>
+        <ul>
+          <li>Python</li>
             <li>SQL</li>
             <li>Machine Learning Basics</li>
-          </ul>
-        </div>
+          <li>Feature Engineering</li>
 
-        <div class="skill-card">
-          <h3>Data Analytics</h3>
-          <ul>
-            <li>Data Preprocessing</li>
+        </ul>
+      </article>
+
+      <article class="card skill-card">
+        <h2>Data &amp; Analytics</h2>
+        <ul>
+          <li>Data Cleaning</li>
+             <li>Data Preprocessing</li>
             <li>Feature Engineering</li>
             <li>Data Visualization</li>
-            <li>Exploratory Data Analysis</li>
-          </ul>
-        </div>
+        </ul>
+      </article>
 
-        <div class="skill-card">
-          <h3>Tools & Platforms</h3>
-          <ul>
-            <li>Jupyter Notebook</li>
-            <li>Power BI</li>
-            <li>Google Colab</li>
-            <li>VS Code</li>
-          </ul>
-        </div>
+      <article class="card skill-card">
+        <h2>Tools &amp; Platforms</h2>
+        <ul>
+          <li>Jupyter Notebook</li>
+          <li>Visual Studio Code</li>
+          <li>Power BI</li>
+        </ul>
+      </article>
 
-        <div class="skill-card">
-          <h3>Professional Skills</h3>
-          <ul>
-            <li>Critical Thinking</li>
-            <li>Team Collaboration</li>
-            <li>Communication</li>
-            <li>Problem Solving</li>
-          </ul>
-        </div>
-
-      </div>
+      <article class="card skill-card">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Critical & Analytical Thinking</li>
+          <li>Team collaboration &amp; Communication</li>
+          <li>Time management</li>
+          <li>Problem-solving</li>
+        </ul>
+      </article>
     </section>
+
+    <footer class="footer">
+      © 2025 by Gayatri Kolasani
+    </footer>
   </main>
 
-  <footer class="footer">© 2025 · by Gayatri Kolasani</footer>
-
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=200"></script>
 </body>
 </html>
