@@ -328,12 +328,14 @@ body.dark-theme .navbar {
 }
 
 .hero-profile-img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  border: 3px solid var(--bg-elevated);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 6px solid rgba(255, 120, 180, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 120, 180, 0.25);
 }
 
 /* Home responsiveness */
@@ -600,7 +602,16 @@ body.dark-theme .navbar {
   font-size: 0.82rem;
   color: var(--text-muted);
 }
-
+/* Remove any white background behind profile picture */
+.hero-photo-wrapper,
+.hero-image-card,
+.hero-photo-card {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
 /* ===========================
    ANIMATIONS
    =========================== */
