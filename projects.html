@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects • Gayatri Kolasani</title>
-    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="styles.css?v=30" />
 </head>
 
-<body class="light">
+<body>
 
 <header class="navbar">
     <a href="index.html" class="nav-logo">GK</a>
 
     <nav class="nav-links">
         <a href="portfolio.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="portfolio.html#skills">Skills</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <button id="themeToggle" class="theme-toggle">🌙</button>
 </header>
 
-<section class="projects-section">
-    <h1 class="page-title">Projects</h1>
+<section class="projects-page">
+    <h1 class="page-title">My Projects</h1>
+    <p class="page-subtitle">Selected work showcasing my experience in AI, robotics, and analytics.</p>
 
-    <div class="projects-container">
+    <div class="projects-grid">
 
-        <!-- Project 1 -->
-       <div class="project-card fade-in">
-  
-  <img src="career-guidance.jpg" alt="AI Career Guidance System" class="project-img-round">
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <img src="career-guidance.jpg" class="project-img" alt="Career Guidance System">
 
-  <h3>AI-Powered Career Pathway Guidance System</h3>
+            <h3>AI-Powered Career Pathway Guidance System</h3>
 
-  <p class="project-desc">
-    Designed and implemented an AI-driven recommendation system for personalized
-    career pathway prediction by analyzing user profiles, skill gaps and market trends.
-  </p>
+            <p class="project-desc">
+                Designed and implemented an AI-driven system to generate personalized recommendations by analyzing
+                skills, profiles and real-time job trends.
+            </p>
 
-  <ul class="project-points">
-    <li>Achieved 88% user satisfaction for career recommendations.</li>
-    <li>Reduced incorrect guidance by 30% using NLP + vectorization.</li>
-    <li>Applied KNN & K-means for clustering and prediction accuracy.</li>
-    <li>Delivered actionable analytics using dashboards and insights.</li>
-  </ul>
-</div>
+            <ul class="project-list">
+                <li>Generated <strong>500+ career recommendations</strong> with 80% user satisfaction.</li>
+                <li>Improved matching accuracy by 20% using TF-IDF + Word2Vec + KNN.</li>
+                <li>Built prediction pipeline and automated scoring dashboards.</li>
+                <li>Evaluated system reliability using Cohen’s Kappa.</li>
+            </ul>
 
-        <!-- Project 2 -->
-       <div class="project-card fade-in">
-  
-  <img src="robot-trolley.jpg" alt="Autonomous Trolley Robot" class="project-img-round">
+            <div class="tag-box">
+                <span>Python</span>
+                <span>ML</span>
+                <span>NLP</span>
+                <span>KNN</span>
+                <span>XGBoost</span>
+            </div>
+        </div>
 
-  <h3>Autonomous Shopping Trolley (Robotics Hackathon)</h3>
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="robot-trolley.jpg" class="project-img" alt="Robot Trolley">
 
-  <p class="project-role">Role: Robotics & Automation Developer</p>
+            <h3>Autonomous Shopping Trolley (Robotics Hackathon)</h3>
 
-  <p class="project-desc">
-    Built an autonomous robot trolley with real-time navigation and obstacle detection
-    to support retail, logistics, and warehouse operations.
-  </p>
+            <p class="project-desc">
+                Built an autonomous robot trolley with real-time navigation and obstacle detection for logistics and retail.
+            </p>
 
-  <ul class="project-points">
-    <li>Integrated Python-based control algorithms.</li>
-    <li>Used ultrasonic sensors for navigation.</li>
-    <li>Improved obstacle detection accuracy by 60%.</li>
-    <li>Tested system performance through 3D simulation.</li>
-  </ul>
-       </div>
-</div>
+            <ul class="project-list">
+                <li>Developed Python-based navigation & control algorithms.</li>
+                <li>Integrated ultrasonic sensors for environment awareness.</li>
+                <li>Improved detection accuracy by 60% using filtered sensor fusion.</li>
+                <li>Tested behavior through 3D simulation environment.</li>
+            </ul>
+
+            <div class="tag-box">
+                <span>Python</span>
+                <span>Robotics</span>
+                <span>ROS</span>
+                <span>Simulation</span>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<script src="script.js"></script>
+<script src="script.js?v=30"></script>
 </body>
 </html>
