@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gayatri Kolasani | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayatri Kolasani | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
 </head>
 
+<!-- Pink gradient homepage -->
 <body class="hero-body">
 
-  <!-- NAVBAR -->
-  <header class="nav">
-    <div class="nav-logo">GK</div>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="publication.html">Publication</a>
-      <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nav-logo">GK</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="theme-toggle icon-btn" id="themeToggle">🌙</button>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-  </header>
+    <!-- HERO SECTION -->
+    <section class="hero-container fade-in">
 
- <!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
-    <p class="tag">DATA & AI ENTHUSIAST · ASPIRING DATA ANALYST</p>
-    <h1>Hi, I'm <span>Gayatri</span>.</h1>
-    <p class="subtitle">
-      "Transforming data into decisions — where analytical insight meets AI intelligence".
-    </p>
+        <!-- LEFT SIDE -->
+        <div class="hero-left">
+            <span class="hero-tag">DATA & AI ENTHUSIAST · ASPIRING DATA ANALYST</span>
 
-    <div class="hero-buttons">
-      <a href="portfolio.html" class="btn primary">View Portfolio</a>
-      <a href="portfolio.html#about" class="btn secondary">More About Me</a>
-    </div>
-  </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Gayatri.</span>
+            </h1>
 
-  <div class="hero-image">
-    <img src="profile.jpg" alt="Gayatri Kolasani" />
-  </div>
-</section>
+            <p class="hero-desc">
+                “Transforming data into decisions — where analytical insight meets AI intelligence.”
+            </p>
 
-  <script src="script.js"></script>
+            <div class="hero-actions">
+                <a href="portfolio.html" class="btn-primary">View Portfolio</a>
+                <a href="portfolio.html#about" class="btn-secondary">More About Me</a>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="hero-right fade-in-delayed">
+            <div class="hero-image-card">
+                <img src="profile.jpg" alt="Gayatri Kolasani" class="hero-profile-img" />
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>
