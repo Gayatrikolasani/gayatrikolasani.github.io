@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills • Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css?v=30" />
-</head>
-<body class="light">
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <a href="index.html" class="nav-logo">GK</a>
-    <nav class="nav-links">
-      <a href="portfolio.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html" class="active">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills • Gayatri Kolasani</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">GK</a>
+      </div>
 
-  <main class="page">
-    <section class="section fade-in">
-      <header class="section-header">
-        <h2>Skills</h2>
-        <p>Technical and Professional skills I bring to a team.</p>
+      <nav class="nav-links">
+        <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-wrapper skills-section fade-in">
+      <header>
+        <h1 class="page-title">Skills</h1>
+        <p class="page-subtitle">
+          A blend of technical, analytical, and collaborative skills I bring to
+          a team.
+        </p>
       </header>
 
-      <div class="skills-grid">
-        <article class="card soft-card">
+      <section class="skills-grid">
+        <article class="skill-card">
           <h3>Technical</h3>
-          <ul class="skills-list">
-            <li>Python &amp; SQL</li>
-            <li>Data Preprocessing &amp; Cleaning</li>
-            <li>Data Visualization</li>
-            <li>Power BI</li>
-            <li>Machine Learning (Scikit-learn)</li>
-            <li>Feature Engineering</li>
+          <ul>
+            <li>Python (data processing & scripting)</li>
+            <li>SQL</li>
+            <li>Machine Learning basics & model building</li>
+            <li>Data preprocessing & feature engineering</li>
           </ul>
         </article>
 
-        <article class="card">
-          <h3>Analytics &amp; ML</h3>
-          <ul class="skills-list">
-            <li>Recommendation Systems</li>
-            <li>Model Evaluation (Cohen’s Kappa)</li>
-            <li>Classification &amp; Ranking models</li>
-            <li>Experimentation &amp; performance tuning</li>
+        <article class="skill-card">
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>Exploratory data analysis</li>
+            <li>Working with structured datasets</li>
+            <li>Evaluating models with appropriate metrics</li>
+            <li>Designing recommendation logic</li>
           </ul>
         </article>
 
-        <article class="card">
-          <h3>Professional</h3>
-          <ul class="skills-list">
-            <li>Problem-solving &amp; Analytical thinking</li>
-            <li>Communication &amp; Teamwork</li>
+        <article class="skill-card">
+          <h3>Tools & Platforms</h3>
+          <ul>
+            <li>Jupyter Notebook</li>
+            <li>Visual Studio Code</li>
+            <li>GitHub (version control & hosting)</li>
+            <li>Basic experience with ROS & simulations</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem-solving and Analytical Thinking</li>
+            <li>Team collaboration & Communication</li>
             <li>Time management</li>
-            <li>Leadership</li>
+            <li>Continuous learning mindset</li>
           </ul>
         </article>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    © 2025 Gayatri Kolasani. All rights reserved.
-  </footer>
+    <footer class="footer">
+      © 2025 · by Gayatri Kolasani
+    </footer>
 
-  <script src="script.js?v=30"></script>
-</body>
+    <script src="script.js?v=1"></script>
+  </body>
 </html>
