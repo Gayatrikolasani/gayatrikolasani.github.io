@@ -8,19 +8,33 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <header class="navbar">
+  <div class="nav-left">
     <a href="index.html" class="nav-logo">GK</a>
+  </div>
 
-    <nav class="nav-links">
-      <a href="portfolio.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <nav class="nav-links" id="desktopNav">
+    <a href="portfolio.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="portfolio.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-right">
     <button id="themeToggle" class="theme-toggle">🌙</button>
-  </header>
+  </div>
+</header>
 
   <main class="page-wrapper fade-in">
     <h1 class="page-title">Projects</h1>
