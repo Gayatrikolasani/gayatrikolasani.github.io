@@ -1,67 +1,31 @@
-/* ===========================================
-   THEME TOGGLE (Light / Dark Mode)
-   =========================================== */
+// THEME TOGGLE + SIMPLE FADE-IN
 
-const toggle = document.getElementById("themeToggle");
+(function () {
+  const body = document.body;
+  const toggleBtn = document.getElementById("themeToggle");
 
-if (toggle) {
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
+  // --------- THEME ----------
+  const savedTheme = localStorage.getItem("gk-theme");
 
-    // Toggle icon 🌙 / ☀️
-    if (document.body.classList.contains("dark-theme")) {
-      toggle.textContent = "☀️";
-    } else {
-      toggle.textContent = "🌙";
-    }
-  });
-}
-
-/* ===========================================
-   FADE-IN ANIMATION ON PAGE LOAD
-   =========================================== */
-const fadeElements = document.querySelectorAll(".fade-in");
-
-fadeElements.forEach((el, index) => {
-  setTimeout(() => el.classList.add("show"), 120 + index * 90);
-});
-
-/* ===========================================
-   NAVBAR ACTIVE LINK HIGHLIGHT
-   =========================================== */
-const navLinks = document.querySelectorAll(".nav-links a");
-const currentPage = window.location.pathname.split("/").pop();
-
-navLinks.forEach(link => {
-  if (link.getAttribute("href") === currentPage) {
-    link.classList.add("active");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-theme");
+    if (toggleBtn) toggleBtn.textContent = "☀️";
+  } else {
+    if (toggleBtn) toggleBtn.textContent = "🌙";
   }
-});
 
-/* ===========================================
-   SMOOTH SCROLL FOR INTERNAL LINKS
-   =========================================== */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function (e) {
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      e.preventDefault();
-      window.scrollTo({
-        top: target.offsetTop - 80,
-        behavior: "smooth",
-      });
-    }
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      const isDark = body.classList.toggle("dark-theme");
+      toggleBtn.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("gk-theme", isDark ? "dark" : "light");
+    });
+  }
+
+  // --------- FADE IN ON LOAD ----------
+  window.addEventListener("load", () => {
+    document
+      .querySelectorAll(".fade-in")
+      .forEach((el) => el.classList.add("show"));
   });
-});
-
-/* ===========================================
-   MOBILE MENU TOGGLE
-   =========================================== */
-const mobileBtn = document.getElementById("mobileMenuBtn");
-const mobileNav = document.getElementById("mobileNav");
-
-if (mobileBtn && mobileNav) {
-  mobileBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("open");
-  });
-}
+})();
