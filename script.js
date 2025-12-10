@@ -55,14 +55,13 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 /* ===========================================
-   MOBILE NAV (Optional future feature)
+   MOBILE MENU TOGGLE
    =========================================== */
-
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileBtn = document.getElementById("mobileMenuBtn");
 const mobileNav = document.getElementById("mobileNav");
 
-if (mobileMenuBtn && mobileNav) {
-  mobileMenuBtn.addEventListener("click", () => {
+if (mobileBtn && mobileNav) {
+  mobileBtn.addEventListener("click", () => {
     mobileNav.classList.toggle("open");
   });
 }
