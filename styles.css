@@ -310,3 +310,127 @@ body {
     margin: 0 auto 1.5rem;
   }
 }
+/* ===============================
+   PAGE HEADER
+=============================== */
+.page-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-subtitle {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 650px;
+  color: var(--text);
+}
+
+/* ===============================
+   ABOUT PAGE LAYOUT
+=============================== */
+.about-layout {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--shadow);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+/* Resume button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to right, var(--accent), var(--accent-light));
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  opacity: 0.85;
+}
+
+/* ===============================
+   OPEN TO ROLES SECTION
+=============================== */
+.open-to-roles h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.roles-list {
+  margin-left: 1.2rem;
+}
+
+.roles-list li {
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+/* ===============================
+   HOW I WORK CARD
+=============================== */
+.personality-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.personality-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.personality-pill {
+  background: var(--tag-bg);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: var(--text);
+  opacity: 0.9;
+  font-size: 0.85rem;
+}
+
+.personality-text {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.personality-bullets li {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+/* ===============================
+   RESPONSIVE FOR ABOUT PAGE
+=============================== */
+@media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .page-header {
+    text-align: center;
+  }
+}
