@@ -3,106 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About • Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <title>Gayatri Kolasani • Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=200" />
 </head>
 
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="nav-left">
-      <a href="index.html" class="nav-logo">GK</a>
-    </div>
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-pill">
+        <span class="brand-avatar">GK</span>
+      </a>
 
-    <nav class="nav-links">
-      <a href="portfolio.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="portfolio.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-    <div class="nav-right">
-      <button id="themeToggle" class="theme-toggle">🌙</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
     </div>
   </header>
 
-  <!-- ABOUT PAGE -->
   <main class="page-wrapper fade-in">
-
-    <header>
-      <h1 class="page-title">About Me</h1>
-      <p class="page-subtitle">
-        CSE (AI) graduate with a strong focus on data analytics, machine learning,
-        and solving real-world problems using structured, insight-driven approaches.
-      </p>
-    </header>
-
-    <section class="about-section">
-
-      <!-- LEFT CARD -->
-      <div class="about-card">
-        <p>
-          I am a Computer Science & Engineering (AI) graduate with hands-on experience in
-          data analytics, preprocessing, visualization, and machine learning.
-          I enjoy turning raw data into meaningful insights and building solutions
-          that help people make informed decisions.
-        </p>
-
-        <p>
-          One of my key projects is an
-          <strong>AI-Powered Career Pathway Guidance System</strong>,
-          where I designed the preprocessing pipeline, built ML models,
-          and evaluated prediction accuracy using performance metrics like
-          accuracy and Cohen’s Kappa.
-        </p>
-
-        <p>
-          I also contributed to a robotics hackathon, where I worked on an
-          <strong>Autonomous Shopping Trolley</strong> using Python and ROS.
-          My role focused on improving navigation performance, optimizing
-          sensor integration, and testing movement logic through simulation.
-        </p>
-
-        <a href="KolasaniG.pdf" class="resume-btn" download>
-          Download Resume
-        </a>
-
-        <div class="open-to-roles">
-          <h3>Open to Roles</h3>
-          <p>I am actively looking for roles related to data, analytics, and ML.</p>
-
-          <ul class="roles-list">
-            <li>Business / Data Analyst</li>
-            <li>AI / ML Analyst</li>
-            <li>Product / BI Analyst (Entry Level)</li>
-          </ul>
+    <!-- HOME HERO -->
+    <section class="home-hero">
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-ring">
+          <img src="profile.jpg"
+               alt="Gayatri Kolasani"
+               class="hero-profile-img" />
         </div>
       </div>
 
-      <!-- RIGHT CARD -->
-      <aside class="personality-card">
-        <h2 class="personality-title">How I Work</h2>
+      <p class="hero-tag">
+        CSE (AI) • Data & Business Analytics
+      </p>
 
-        <div class="personality-pills">
-          <span class="personality-pill">Analytical</span>
-          <span class="personality-pill">Curious</span>
-          <span class="personality-pill">Detail-oriented</span>
-          <span class="personality-pill">Collaborative</span>
-        </div>
+      <h1 class="hero-heading">
+        Aspiring <span>Data Analyst</span> and AI-Enthusiast
+      </h1>
 
-        <ul class="personality-bullets">
-          <li>Strong at identifying patterns and connecting insights logically.</li>
-          <li>Skilled in data cleaning, feature engineering, and structured workflows.</li>
-          <li>Communicate insights clearly to technical & non-technical audiences.</li>
-          <li>Focused on accuracy, clarity, and real-world problem solving.</li>
-        </ul>
-      </aside>
+      <p class="hero-subtitle">
+        “Transforming data into decisions — where analytical insight meets AI intelligence.”
+      </p>
 
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn btn-primary">View my portfolio</a>
+        <a href="KolasaniG.pdf" class="btn btn-secondary" download>Download resume</a>
+      </div>
     </section>
+
+    <footer class="footer">
+      © 2025 by Gayatri Kolasani
+    </footer>
   </main>
 
-  <footer class="footer">© 2025 by Gayatri Kolasani</footer>
-
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=200"></script>
 </body>
 </html>
