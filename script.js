@@ -36,5 +36,3 @@ const observer = new IntersectionObserver(
 );
 fadeEls.forEach((el)=>
    observer.observe(el));
-
-fadeEls.forEach((el) => observer.observe(el));
