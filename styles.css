@@ -467,6 +467,18 @@ body.dark-theme .navbar {
 }
 
 /* Personality side */
+.personality-bullets {
+    list-style: disc !important;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.personality-bullets li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
 .personality-title {
   margin-top: 0;
   margin-bottom: 10px;
