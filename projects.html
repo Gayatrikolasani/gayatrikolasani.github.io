@@ -4,32 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects • Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css?v=1012" />
+  <link rel="stylesheet" href="styles.css?v=200" />
 </head>
-<body>
 
+<body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="nav-left">
-      <a href="index.html" class="nav-logo">GK</a>
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-pill">
+        <span class="brand-avatar">GK</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="portfolio.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
     </div>
-
-    <button class="nav-menu-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="portfolio.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-      🌙
-    </button>
   </header>
 
   <main class="page-wrapper fade-in">
@@ -40,41 +36,46 @@
       </p>
     </header>
 
-    <section class="projects-section">
-      <div class="projects-container">
+    <section class="projects-list">
+      <!-- PROJECT 1 -->
+      <article class="card project-card">
+        <img src="career-guidance.jpg"
+             alt="AI-powered Career Pathway Guidance System dashboard"
+             class="project-image" />
 
-        <!-- Project 1 -->
-        <article class="project-card">
-          <img src="career-guidance.jpg"
-               alt="AI-powered career guidance dashboard"
-               class="project-img" />
+        <div class="project-content">
+          <h2 class="project-title">
+            AI-Powered Career Pathway Guidance System
+          </h2>
 
-          <h3>AI-Powered Career Pathway Guidance System</h3>
-          <p class="project-desc">
-            A machine learning model that recommends personalized career paths
-            by analysing user profiles, skill gaps, and performance metrics.
+          <p class="project-text">
+            A machine learning model that recommends personalized career paths by analysing
+            user profiles, skill gaps, and performance metrics.
           </p>
 
           <ul class="project-points">
             <li>Achieved 88% user satisfaction with accurate recommendations.</li>
             <li>Used NLP + vectorization to reduce incorrect suggestions by 30%.</li>
-            <li>Applied K-Means & KNN for clustering and prediction.</li>
-            <li>Delivered dashboards for actionable analytics and insights.</li>
+            <li>Applied K-Means &amp; KNN for clustering and prediction.</li>
+            <li>Delivered dashboards for actionable insights.</li>
           </ul>
-        </article>
+        </div>
+      </article>
 
-        <!-- Project 2 -->
-        <article class="project-card">
-          <img src="robot-trolley.jpg"
-               alt="Autonomous shopping trolley robot"
-               class="project-img" />
+      <!-- PROJECT 2 -->
+      <article class="card project-card">
+        <img src="robot-trolley.jpg"
+             alt="Autonomous Shopping Trolley prototype"
+             class="project-image" />
 
-          <h3>Autonomous Shopping Trolley (Robotics Hackathon)</h3>
-    
-          <p class="project-desc">
-            A robotics project using Python & ROS to build an autonomous
-            trolley capable of obstacle detection, navigation, and movement
-            automation.
+        <div class="project-content">
+          <h2 class="project-title">
+            Autonomous Shopping Trolley (Robotics Hackathon)
+          </h2>
+
+          <p class="project-text">
+            A robotics project using Python &amp; ROS to build an autonomous trolley capable of
+            obstacle detection, navigation, and movement automation.
           </p>
 
           <ul class="project-points">
@@ -83,9 +84,8 @@
             <li>Tested navigation using 3D simulation environments.</li>
             <li>Enhanced automation flow for smoother movement.</li>
           </ul>
-        </article>
-
-      </div>
+        </div>
+      </article>
     </section>
 
     <footer class="footer">
@@ -93,6 +93,6 @@
     </footer>
   </main>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=200"></script>
 </body>
 </html>
