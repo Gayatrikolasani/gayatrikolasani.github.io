@@ -310,23 +310,23 @@ body.dark-theme .navbar {
   gap: 30px;
 }
 
-.project-card {
-  background: var(--bg-elevated);
-  padding: 22px;
-  border-radius: 26px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-soft);
+/* PROJECT IMAGE FIX — Desktop + Mobile Perfect */
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;      /* Prevent giant tall images on desktop */
+    object-fit: cover;      /* Crop edges nicely */
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 16px;
 }
 
-/* **NEW FIX** – Smooth desktop & mobile images */
-.project-img {
-  width: 100%;
-  height: auto;
-  max-height: 340px;
-  object-fit: cover;
-  border-radius: 22px;
-  display: block;
-  margin-bottom: 16px;
+/* MOBILE FIX — don't crop too much */
+@media (max-width: 768px) {
+    .project-card img {
+        max-height: 260px;
+        object-fit: contain;
+    }
 }
 
 /* ---------------------------------------------------
