@@ -576,6 +576,142 @@ body[data-theme="dark"] .navbar {
     transition: 0.25s;
     box-shadow: 0 6px 12px rgba(255, 100, 160, 0.3);
 }
+/* =======================
+   HOME HERO PAGE
+   ======================= */
+
+.hero-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(120deg, #ffe9f4, #fbe2ff, #f2ecff);
+  min-height: 100vh;
+}
+
+/* DARK MODE */
+body.dark-theme.hero-body {
+  background: linear-gradient(120deg, #12121f, #1a1a2d, #2a2740);
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.nav-logo {
+  background: #ff6dad;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgba(255, 95, 155, 0.3);
+}
+
+.nav a {
+  margin-left: 1.3rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HERO LAYOUT */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  max-width: 540px;
+}
+
+.hero-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #c53576;
+  background: #ffd5ea;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #e85099;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(135deg, #ff5fa6, #ff7fb3);
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(255, 120, 160, 0.35);
+}
+
+.btn-secondary {
+  margin-left: 1rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  border: 2px solid #ff6dad;
+  color: #ff3b8f;
+  text-decoration: none;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-image-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
+}
+
+.hero-profile-img {
+  width: 320px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-desc {
+    text-align: center;
+  }
+
+  .btn-secondary {
+    margin-left: 0.5rem;
+  }
+}
 
 .resume-btn:hover {
     transform: translateY(-3px);
