@@ -201,7 +201,17 @@ body {
   max-width: 420px;
   color: var(--muted);
 }
+.hero-intro {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
 
+.name-highlight {
+  color: var(--accent-light);
+  font-weight: 600;
+}
 .btn {
   padding: 12px 26px;
   border-radius: 30px;
