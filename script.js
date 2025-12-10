@@ -1,39 +1,50 @@
-/* ============================
-   MOBILE NAV TOGGLE
-============================ */
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+  const themeToggle = document.getElementById("themeToggle");
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
 
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-}
+  /* ---------------------------
+     THEME: load saved preference
+  ---------------------------- */
+  const savedTheme = localStorage.getItem("gk-theme");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-theme");
+  }
 
-/* ============================
-   THEME SWITCHER
-============================ */
-const themeToggle = document.getElementById("themeToggle");
+  // set correct icon
+  function setThemeIcon() {
+    if (!themeToggle) return;
+    const isDark = body.classList.contains("dark-theme");
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
+  }
+  setThemeIcon();
 
-// Restore saved theme
-const savedTheme = localStorage.getItem("theme");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-theme");
+      const isDark = body.classList.contains("dark-theme");
+      localStorage.setItem("gk-theme", isDark ? "dark" : "light");
+      setThemeIcon();
+    });
+  }
 
-if (savedTheme === "dark") {
-  document.documentElement.classList.add("dark-theme");
-  themeToggle.textContent = "☀️"; // Sun icon for dark mode
-} else {
-  themeToggle.textContent = "🌙"; // Moon icon for light mode
-}
+  /* ---------------------------
+     MOBILE NAV TOGGLE
+  ---------------------------- */
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
 
-// Theme toggle click
-themeToggle.addEventListener("click", () => {
-  const isDark = document.documentElement.classList.toggle("dark-theme");
-
-  if (isDark) {
-    themeToggle.textContent = "☀️";
-    localStorage.setItem("theme", "dark");
-  } else {
-    themeToggle.textContent = "🌙";
-    localStorage.setItem("theme", "light");
+    // Close menu when a link is clicked (on small screens)
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("active");
+        }
+      });
+    });
   }
 });
