@@ -419,3 +419,79 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===================================
+   PERFECT MOBILE FIX (APPLY LAST)
+=================================== */
+
+@media (max-width: 768px) {
+
+  /* --- Navbar --- */
+  .nav-menu-toggle {
+    display: flex !important;
+    z-index: 2000;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px var(--shadow);
+    z-index: 1500;
+    width: 200px;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  /* --- About Page Layout (Correct mobile layout) --- */
+  .about-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 100%;
+  }
+
+  /* --- Cards resize & spacing --- */
+  .card {
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 20px;
+    margin: 0 auto;       /* Centers the card */
+    box-shadow: 0 0 20px var(--shadow);
+  }
+
+  /* Personality Pills section centered */
+  .personality-pills {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Header center aligned */
+  .page-header {
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+  }
+
+  /* Make Open-to-Roles box match screenshot */
+  .open-to-roles {
+    background: var(--tag-bg);
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 0 10px var(--shadow);
+    margin-top: 1.2rem;
+  }
+
+  .roles-list {
+    padding-left: 1rem;
+  }
+}
