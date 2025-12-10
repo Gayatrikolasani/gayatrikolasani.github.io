@@ -4,52 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About • Gayatri Kolasani</title>
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
- <header class="navbar">
-  <div class="nav-left">
-    <a href="index.html" class="nav-logo">GK</a>
-  </div>
 
-  <nav class="nav-links" id="desktopNav">
-    <a href="portfolio.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">GK</a>
+    </div>
 
-  <!-- Mobile Menu Button -->
-  <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    <button class="nav-menu-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <!-- Mobile Menu -->
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="portfolio.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav class="nav-links" id="navLinks">
+      <a href="portfolio.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <div class="nav-right">
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-  </div>
-</header>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      🌙
+    </button>
+  </header>
 
-  <!-- ABOUT PAGE -->
   <main class="page-wrapper fade-in">
-
-    <header>
-      <h1 class="page-title">About Me</h1>
+    <header class="page-header">
+      <h1 class="page-title">About me</h1>
       <p class="page-subtitle">
-        CSE (AI) graduate with a strong focus on data analytics, machine learning,
-        and solving real-world problems using structured, insight-driven approaches.
+        CSE (AI) graduate focused on data analytics, machine learning, and
+        thoughtful, insight-driven problem solving.
       </p>
     </header>
 
     <section class="about-section">
-
-      <!-- LEFT CARD -->
+     <!-- LEFT CARD -->
       <div class="about-card">
         <p>
           I am a Computer Science & Engineering (AI) graduate with hands-on experience in
@@ -107,12 +100,13 @@
           <li>Focused on accuracy, clarity, and real-world problem solving.</li>
         </ul>
       </aside>
-
     </section>
+
+    <footer class="footer">
+      © 2025 by Gayatri Kolasani
+    </footer>
   </main>
 
-  <footer class="footer">© 2025 · by Gayatri Kolasani</footer>
-
-  <script src="script.js?v=3"></script>
+  <script src="script.js"></script>
 </body>
 </html>
